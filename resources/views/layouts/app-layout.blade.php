@@ -13,7 +13,7 @@
         {{ $slot }}
     </main>
 
-    <div class="mdj-container mdj-container__large md:flex justify-between mt-28 mb-4 items-end">
+    <div class="mdj-container mdj-container__large flex flex-col md:flex-row justify-between mt-28 mb-4 items-end gap-4">
         <x-logo-pos/>
         <p class="text-sm opacity-50">
             Eine Webseite der <a href="https://gruenezuerich.ch" class="underline">GRÜNEN der Stadt Zürich.</a>
