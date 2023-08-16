@@ -5,13 +5,13 @@
 <x-app-layout>
     <x-header />
     <p class="text-lg mdj-container mdj-container__small mt-14">
-        Musstest du vor Kurzem auch leer schlucken, als du die Zeitung aufgeschlagen hast? <b>Eine neue Studie kommt zum Schluss, dass der Golfstrom, einer der wichtigsten Klima-Regulatoren unseres Planeten, schon in wenigen Jahren zum Stillstand kommen könnte.</b> Wenn wir mit unseren Freund*innen sprechen, wird uns oft gesagt, dass wir keine Alarmist*innen sein sollen. Aber sind wir ehrlich miteinander: <b>Es ist ernst, die Uhr tickt.</b>
+        Musstest du vor Kurzem auch leer schlucken, als du die Zeitung aufgeschlagen hast? <b>Eine neue Studie kommt zum Schluss, dass der Golfstrom, einer der wichtigsten Klima-Regulatoren unseres Planeten, schon in wenigen Jahren zum Stillstand kommen könnte.</b> Wenn wir mit unseren Freund*innen sprechen, wird uns oft gesagt, dass wir nicht so alarmistisch sein sollen. Aber sind wir ehrlich: <b>Es ist ernst, die Uhr tickt.</b>
     </p>
     <div class="img-wrapper mdj-container mdj-container__large my-10">
         <img src="/media/images/zeitungsschnippsel.jpg" alt="Newspaper Clippings of climate crisis">
     </div>
     <p class="text-lg mdj-container mdj-container__small">
-        Wenn wir uns in der Schweiz umschauen, sehen wir, dass es auch bei uns noch viel zu tun gibt; nicht nur in der Umweltpolitik, sondern auch bei den steigenden Lebenskosten, der wachsenden Ungleichheit, den Rechten von Menschen mit Behinderungen und der Gleichstellung aller Geschlechter. In all diesen Bereichen braucht es GRÜNE Politik: <b>Jetzt mehr denn je.</b>
+        Wenn wir uns in der Schweiz umschauen, sehen wir, dass es noch viel zu tun gibt; nicht nur in der Umweltpolitik, sondern auch gegen die steigenden Lebenskosten, gegen die wachsenden Ungleichheit, für die Rechte von Menschen mit Behinderungen und für die Gleichstellung aller Geschlechter. In all diesen Bereichen braucht es GRÜNE Politik: <b>Jetzt mehr denn je.</b>
     </p>
     <p class="text-lg mdj-container mdj-container__small">
         <b>Bis zum eidgenössischen Wahlsonntag dauert es noch {{ $diff }} Tage.</b> Diesmal gibt es eine Neuerung: Zum ersten Mal müssen alle Parteien ihre Kassenbücher offenlegen. <b>Der SVP-Wahlkampfleiter protzt mit mindestens 4.5 Millionen Franken, die sie ausgeben werden.</b> Mit so einem Budget können wir nicht mithalten. Was wir aber mit Sicherheit sagen können: <b>Wir sind die Partei der Menschen, nicht der Grosskonzerne und Lobbys.</b>
@@ -21,7 +21,7 @@
         <p class="text-xs text-end mt-2"><b>Quelle:</b> Tagesanzeiger</p>
     </div>
     <p class="text-lg mdj-container mdj-container__small">
-        Damit wir im Oktober einen Rechtsrutsch verhindern können, sind wir auf das Engagement von Menschen wie dir angewiesen. <b>Hilfst du uns, unere GRÜNE Vision zu verwirklichen?</b>
+        Damit wir im Oktober einen Rechtsrutsch verhindern können, sind wir auf das Engagement von Menschen wie dir angewiesen. <b>Hilfst du uns, unsere GRÜNE Vision zu verwirklichen?</b>
     </p>
     <div class="mdj-container mdj-container__large">
         <div class="mdj-support-boxes">
