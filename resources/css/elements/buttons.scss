@@ -1,0 +1,7 @@
+.mdj-button {
+    @apply inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-white bg-magenta font-semibold;
+
+    &__neg {
+        @apply bg-white text-magenta;
+    }
+}

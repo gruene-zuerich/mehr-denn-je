@@ -1,0 +1,12 @@
+.mdj-heroine {
+    .mdj-heroine-image {
+        position: relative;
+        height: 66vh;
+    }
+
+    .mdj-heroine-video {
+        z-index: 100;
+        margin-top: -40%;
+        @apply drop-shadow-xl;
+    }
+}

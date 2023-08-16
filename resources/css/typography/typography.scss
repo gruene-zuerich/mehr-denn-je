@@ -1,0 +1,15 @@
+@import "./fonts/fonts.scss";
+
+html {
+    font-family: "Sanuk", sans-serif;
+    font-weight: 400;
+    font-size: clamp(16px, 3vw, 20px);
+
+    b {
+        font-weight: 600;
+    }
+
+    p+p {
+        margin-top: 1em;
+    }
+}
