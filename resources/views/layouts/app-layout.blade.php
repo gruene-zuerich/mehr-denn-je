@@ -13,6 +13,13 @@
         {{ $slot }}
     </main>
 
+    <div class="mdj-container mdj-container__large md:flex justify-between mt-28 mb-4 items-end">
+        <x-logo-pos/>
+        <p class="text-sm opacity-50">
+            Eine Webseite der <a href="https://gruenezuerich.ch" class="underline">GRÜNEN der Stadt Zürich.</a>
+        </p>
+    </div>
+
     @vite(["resources/js/app.js"])
 </body>
 </html>

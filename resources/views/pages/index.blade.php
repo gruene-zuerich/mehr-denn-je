@@ -48,10 +48,4 @@
             </x-support-box>
         </div>
     </div>
-    <div class="mdj-container mdj-container__large flex justify-between mt-28 mb-4 items-end">
-        <x-logo-pos/>
-        <p class="text-sm opacity-50">
-            Eine Webseite der <a href="https://gruenezuerich.ch" class="underline">GRÜNEN der Stadt Zürich.</a>
-        </p>
-    </div>
 </x-app-layout>
