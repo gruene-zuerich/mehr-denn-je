@@ -1,6 +1,6 @@
 @php
 use Illuminate\Support\Facades\Http;
-$response = Http::withBasicAuth(env("RNW_USER"), env("RNW_PASS"))->get("https://api.raisenow.com/epayment/api/grnes-9ecb/transactions/search?sort[0][field_name]=created&sort[0][order]=desc&filters[0][field_name]=stored_campaign_id&filters[0][type]=number&filters[0][value]=1");
+$response = Http::withBasicAuth(env("RNW_USER"), env("RNW_PASS"))->get("https://api.raisenow.com/epayment/api/grnes-9ecb/transactions/search?sort[0][field_name]=created&sort[0][order]=desc&filters[0][field_name]=stored_campaign_id&filters[0][type]=number&filters[0][value]=1&filters[1][field_name]=last_status&filters[1][type]=term&filters[1][value]=final_success");
 $transactions = $response->json()["result"]["transactions"];
 $amount = env("BASE_AMOUNT", 1245.90);
 foreach ($transactions as $transaction) {
