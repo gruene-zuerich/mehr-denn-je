@@ -6,7 +6,7 @@
     <div class="mdj-container mdj-container__large relative z-30">
         <div class="mdj-heroine-video aspect-16/9">
             <iframe
-                src="https://www.youtube.com/embed/YY4EY3rbWUU?controls=0"
+                src="https://www.youtube.com/embed/OY20tvVBqFI?autoplay=1&loop=1&controls=1&mute=1"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

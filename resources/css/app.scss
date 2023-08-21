@@ -4,3 +4,8 @@
 
 @import "./typography/typography.scss";
 @import "./elements/style.scss";
+
+
+.min-h-screen {
+    min-height: calc(var(--vh, 1vh) * 100);
+}

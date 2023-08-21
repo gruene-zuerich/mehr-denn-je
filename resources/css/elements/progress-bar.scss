@@ -1,0 +1,21 @@
+.mdj-progress {
+    display: flex;
+    height: 2rem;
+    background-color: #e9ecef;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    @apply mb-6;
+
+    &__bar {
+        margin: 0.25rem;
+        width: 0%;
+        background-color: theme("colors.magenta");
+        border-radius: 1rem;
+
+        span {
+            color: theme("colors.white");
+            opacity: 0;
+        }
+    }
+}
