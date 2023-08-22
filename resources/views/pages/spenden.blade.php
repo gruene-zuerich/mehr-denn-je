@@ -31,7 +31,7 @@ foreach ($transactions as $transaction) {
             </div>
         </div>
         <p>
-            <b>Wir haben bisher {{ number_format($amount, 2, ",", ".") }} CHF gesammelt. Unser Ziel ist es, bis zum Eintreffen der Couverts {{ number_format(25000, 2, ",", ".") }} zusammen zu kriegen. Hilfst du uns dabei?</b>
+            <b>Wir haben bisher {{ number_format($amount, 2, ",", "'") }} CHF gesammelt. Unser Ziel ist es, bis zum Eintreffen der Couverts {{ number_format(25000, 2, ",", "'") }} zusammen zu kriegen. Hilfst du uns dabei?</b>
         </p>
     <div class="rnw-widget-container mt-12"></div>
     <script src="https://tamaro.raisenow.com/grnes-c83e/latest/widget.js"></script>
