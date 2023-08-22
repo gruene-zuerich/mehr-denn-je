@@ -51,7 +51,7 @@
     @if (!request()->cookie("splash"))
         <x-splash />
         @php
-            cookie()->queue(cookie('splash', true, 60 * 24 * 2));
+            cookie()->queue(cookie('splash', true, 60 * 24 * 0.5));
         @endphp
     @endif
 </x-app-layout>
