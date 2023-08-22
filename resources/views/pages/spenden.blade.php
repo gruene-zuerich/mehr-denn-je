@@ -45,8 +45,40 @@ foreach ($transactions as $transaction) {
                 stored_campaign_id: 1,
             },
         },
+        slots: {
+            profile_form_4: [{
+                component: "field",
+                type: "text",
+                name: "stored_customer_address_street",
+                label: "Strasse / Nr."
+            }],
+            profile_form_5: [{
+                component: "field",
+                type: "text",
+                name: "stored_customer_address_zip",
+                label: "PLZ"
+            }],
+            profile_form_6: [{
+                component: "field",
+                type: "text",
+                name: "stored_customer_address_city",
+                label: "Ort"
+            }]
+            },
         translations: {
             de: {
+                validation_errors: {
+                    stored_customer_address_zip: {
+                        field_has_wrong_format: 'Bitte gib eine gültige Postleitzahl an',
+                        field_is_missing: 'Aus Transparenzgründen benötigen wir deine Adresse',
+                    },
+                    stored_customer_address_street: {
+                        field_is_missing: 'Aus Transparenzgründen benötigen wir deine Adresse',
+                    },
+                    stored_customer_address_city: {
+                        field_is_missing: 'Aus Transparenzgründen benötigen wir deine Adresse',
+                    },
+                },
                 purposes: {
                     p1: 'Nationalratswahlen - GRÜNE mehr denn je',
                 },
@@ -56,6 +88,30 @@ foreach ($transactions as $transaction) {
             stored_hidden_campaign_name: 'mehr_denn_je',
         },
     })
+
+  function setupCustomFieldValidation(event) {
+var widget = window['widget'] = event.data.api;
+var paymentValidations = window.rnw.tamaro.toJS(widget.computedConfig.paymentValidations);
+
+
+  // adding rules for a custom field
+  paymentValidations['stored_customer_address_street'] = {
+    required: true,
+  };
+
+  paymentValidations['stored_customer_address_zip'] = {
+    required: true,
+    format: /\d{4}/
+  };
+
+  paymentValidations['stored_customer_address_city'] = {
+    required: true
+  };
+
+  widget.config.paymentValidations = paymentValidations;
+}
+
+window.rnw.tamaro.events["afterCreate"].subscribe(setupCustomFieldValidation);
     </script>
     <style>
         :root {
